@@ -47,3 +47,42 @@ footer{
     min-height: 200px;
     background-color: #cccccc;
 }
+#menu-mobile{
+    display: none;
+}
+
+@media only screen and (max-width: 480px){
+
+    nav{
+        display: none;
+    }
+    #menu-mobile{
+        display: flex;
+        position: fixed;
+        bottom: 0px;
+        left: 0px;
+        width: 100%;
+        height: 50px;
+        background-color: #ffcc00;
+    }
+    #menu-mobile a{
+        flex: 1;
+        color: #000;
+        align-self: center;
+        text-align: center;
+        font-size: 20px;
+    }
+    #conteudo{
+        flex-direction: column;
+    }
+    #esquerda{
+        
+    }
+    #direita-conteudo{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    footer{
+        background-color: #007700;
+    }
+}
